@@ -1,3 +1,6 @@
+*{
+  font-family: sans-serif;
+}
 .app {
   width: 100%;
   height: 100vh;
@@ -24,4 +27,8 @@ nav.navbar{
 }
 .logo{
   font-weight: 800;
+}
+.header-blue{
+  font-size: 50px;
+  font-weight: 700;
 }
