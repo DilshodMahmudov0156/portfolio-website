@@ -1,4 +1,5 @@
 import React from 'react';
+import myi_mage from "../images/photo_2024-02-20_23-58-04.jpg";
 
 function Header({}) {
     return (
@@ -10,7 +11,11 @@ function Header({}) {
                         <h1 className="header-blue">I'm <span>Dilshod Mahmudov</span></h1>
                         <h3>I'm <span className="header-red">Front-End developer</span></h3>
                     </div>
-                    <div className="col-xl-6"></div>
+                    <div className="col-xl-6">
+                        <div className="my-image">
+                            <img src={myi_mage} alt=""/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
