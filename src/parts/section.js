@@ -2,7 +2,9 @@ import React from 'react';
 
 function Section() {
     return (
-        <section></section>
+        <section>
+
+        </section>
     );
 }
 

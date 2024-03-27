@@ -1,4 +1,9 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+const forActive = ({isActive}) => {
+    return(
+        isActive? "nav-link my-active": "nav-link"
+    );
+}
 
 function NavBar(props) {
     return (
@@ -12,10 +17,10 @@ function NavBar(props) {
                 </button>
                 <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul className="navbar-nav">
-                        <Link to="/">Home</Link>
-                        <Link to="/skills">Skills</Link>
-                        <Link to="/projects">Projects</Link>
-                        <Link to="/contact">Contact</Link>
+                        <NavLink to="/" className={forActive}>Home</NavLink>
+                        <NavLink to="/skills" className={forActive}>Skills</NavLink>
+                        <NavLink to="/projects" className={forActive}>Projects</NavLink>
+                        <NavLink to="/contact" className={forActive}>Contact</NavLink>
                     </ul>
                 </div>
             </div>
