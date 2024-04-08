@@ -1,11 +1,9 @@
 import React from 'react';
 import my_image from "../images/my-picture.png";
-import ParticlesComponent from "../components/particles";
 
 function Header({}) {
     return (
         <header>
-            <ParticlesComponent id="particles"/>
             <div className="container">
                 <div className="row align-items-center justify-content-between">
                     <div className="col-xl-6">
